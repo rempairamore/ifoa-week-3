@@ -17,7 +17,7 @@ p {
 }
 
 .taskSingolo p::before {
-    content: '~~> ';
+    content: '- ';
 }
 
 
@@ -46,8 +46,8 @@ h1 {
 }
 
 #inputTesto {
-    font-size: 25px; /* Aumenta la dimensione del testo digitato nell'input */
-    padding: 10px; /* Aggiunge più spazio interno, rendendo l'input più alto */
-    width: 90%; /* Imposta la larghezza dell'input al 100% del suo contenitore parent */
-    box-sizing: border-box; /* Assicurati che padding e bordo siano inclusi nella larghezza totale */
+    font-size: 25px;
+    padding: 10px;
+    width: 90%;
+    box-sizing: border-box;
   }
