@@ -1,8 +1,27 @@
 html {
     font-family: 'Roboto', sans-serif;
     background-color: bisque;
+    text-align: center;
 }
 
+table {
+    align-items: center;
+    width: 100%;
+}
+
+#tableForm tr {
+    width: 100%;
+    text-align: center;
+} 
+
+#tableForm td input {
+    width: 100%;
+    
+}
+#tableForm td {
+    display: inline-block;
+    
+}
 
 p {
     font-size: 1em;
@@ -23,7 +42,6 @@ p {
 
 h1 {
     font-size: 2.5em;
-    text-align: center;
 }
 
 #tasks h2{
@@ -48,6 +66,7 @@ h1 {
 #inputTesto {
     font-size: 25px;
     padding: 10px;
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
+    border-radius: 20px;
   }
