@@ -22,6 +22,7 @@ let newTask = (testo) =>{
     })
     bottone.addEventListener('click', () => {
         newDiv.remove()
+        hideYourTask()
     })
 }
 
@@ -34,6 +35,18 @@ tableForm.addEventListener('click', (evt) => {
         let getText = document.querySelector('#inputTesto').value;
         // console.log(getText)
         newTask(getText)
+        hideYourTask()
     } 
 })
 
+let hideYourTask = () => {
+    let taskVuoto = document.querySelectorAll('#tasks p')
+    if(taskVuoto.length < 1) {
+        document.querySelector('#tasks h2').style.display = 'none'
+    } else {
+        document.querySelector('#tasks h2').style.display = 'unset'
+ 
+    }
+} 
+
+hideYourTask()
