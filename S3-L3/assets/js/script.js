@@ -1,13 +1,3 @@
-// let bottoneInvia = document.querySelector('table')
-// bottoneInvia.addEventListener('click', function(e) {
-//     e.preventDefault()
-
-//     let form = document.tab[0];
-//     console.log(form[0].value)
-//     console.log(form[1].value)
-//     console.log(form[2].checkValidity())
-
-// })
 let inizioTask = document.querySelector('#tasks h2')
 let tasksCreati = document.querySelectorAll('.tasks p')
 
@@ -17,7 +7,10 @@ let newTask = (testo) =>{
     let newDiv = document.createElement('div')
     let task = document.createElement('p')
     let bottone = document.createElement('button')
-    bottone.innerText = 'Elimina Task'
+    let icona = document.createElement('i');
+    icona.className = 'fa-solid fa-ban'; 
+    bottone.appendChild(icona);
+    bottone.setAttribute('aria-label', 'Elimina Task');
     newDiv.className = 'taskSingolo'; 
     task.innerText = testo
     // task.style.textAlign = 'center'
@@ -42,8 +35,7 @@ tableForm.addEventListener('click', (evt) => {
     console.log(evt.target)
     // let tr = evt.target.parentNode.parentNode;
     // tr.style.color = 'red';
-    if(evt.target.innerText === 'INVIA') {
-        // console.log("ciao invia");
+    if(evt.target.className === 'fa-solid fa-plus') {
         let getText = document.querySelector('#inputTesto').value;
         // console.log(getText)
         newTask(getText)

@@ -1,5 +1,10 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: bisque;
+}
+
+
 p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     font-weight: 300;
     color: rgb(37, 38, 37);
@@ -7,5 +12,42 @@ p {
 
 .taskSingolo p {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 20px;
+    font-size: 0.7em;
 }
+
+.taskSingolo p::before {
+    content: '~~> ';
+}
+
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#tasks h2{
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+.fa-ban, .fa-plus {
+    font-size: 15px;
+    padding: 3px 3px;
+    border: none;
+    cursor: pointer; 
+}
+
+.fa-plus {
+    font-size: 40px;
+    padding: 3px 3px;
+    border: none;
+    cursor: pointer; 
+}
+
+#inputTesto {
+    font-size: 25px; /* Aumenta la dimensione del testo digitato nell'input */
+    padding: 10px; /* Aggiunge più spazio interno, rendendo l'input più alto */
+    width: 90%; /* Imposta la larghezza dell'input al 100% del suo contenitore parent */
+    box-sizing: border-box; /* Assicurati che padding e bordo siano inclusi nella larghezza totale */
+  }
