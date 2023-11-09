@@ -1,7 +1,4 @@
 let inizioTask = document.querySelector('#tasks h2')
-let tasksCreati = document.querySelectorAll('.tasks p')
-
-
 
 let newTask = (testo) =>{
     let newDiv = document.createElement('div')
@@ -27,8 +24,6 @@ let newTask = (testo) =>{
         newDiv.remove()
     })
 }
-
-
 
 let tableForm = document.querySelector('#tableForm');
 tableForm.addEventListener('click', (evt) => {
