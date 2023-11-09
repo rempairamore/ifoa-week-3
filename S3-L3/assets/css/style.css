@@ -1,0 +1,11 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: rgb(37, 38, 37);
+}
+
+.taskSingolo p {
+    display: inline-block;
+    margin-right: 30px;
+}
