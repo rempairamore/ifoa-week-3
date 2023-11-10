@@ -1,12 +1,24 @@
 html {
     text-align: center;
-    background-image: url('../img/pizza.png'); 
-    background-repeat: repeat;
+    background-image: url('../img/pizza3.png'); 
+    background-repeat: round;
     background-attachment: fixed;
+    font-family: 'Montserrat';
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 3.8em;
+    font-weight: 900;
+    margin: 20px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); 
 }
 
 #tombolone tr {
-    background-color: rgb(98, 147, 184);
+    background-color: blueviolet;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(150, 238, 17);
 }
 
 #tombolone table {
