@@ -53,6 +53,11 @@ h1 {
     font-size: 2em;
 }
 
+#tasks p {
+    font-size: 1.5em;
+    margin: 12px;
+}
+
 .fa-ban, .fa-plus {
     font-size: 15px;
     padding: 3px 3px;

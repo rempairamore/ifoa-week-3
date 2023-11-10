@@ -1,5 +1,7 @@
-let inizioTask = document.querySelector('#tasks h2')
+let inizioTask = document.querySelector('#tasks')
 
+
+//Seconda cosa fatta
 let newTask = (testo) =>{
     let newDiv = document.createElement('div')
     let task = document.createElement('p')
@@ -26,19 +28,34 @@ let newTask = (testo) =>{
     })
 }
 
+//Prima cosa fatta
 let tableForm = document.querySelector('#tableForm');
 tableForm.addEventListener('click', (evt) => {
-    console.log(evt.target)
+    // console.log(evt.target)
     // let tr = evt.target.parentNode.parentNode;
     // tr.style.color = 'red';
     if(evt.target.className === 'fa-solid fa-plus') {
-        let getText = document.querySelector('#inputTesto').value;
-        // console.log(getText)
-        newTask(getText)
-        hideYourTask()
+        let getText = document.querySelector('#inputTesto').value.trim();
+        console.dir(getText)
+        if(getText.length > 2) {
+            newTask(getText)
+            hideYourTask()
+            document.querySelector('#inputTesto').value = ''
+        } else {
+            console.log('inserisci un testo maggiore di 2 char')
+            let alertText = document.createElement('span')
+            alertText.innerText = 'Inserire un testo maggiore di 2 caratteri!'
+            inizioTask.appendChild(alertText)
+            setTimeout(() => {
+                inizioTask.removeChild(alertText);
+            }, 2000)
+        }
     } 
 })
 
+
+
+//Terza cosa fatta
 let hideYourTask = () => {
     let taskVuoto = document.querySelectorAll('#tasks p')
     if(taskVuoto.length < 1) {
