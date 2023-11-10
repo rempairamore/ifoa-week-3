@@ -43,4 +43,10 @@ h1 {
 
 #pulsantiera button {
     padding: 10px;
+    background-color: blueviolet;
+    border-radius: 15px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgb(150, 238, 17);
+
 }
