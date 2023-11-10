@@ -19,8 +19,14 @@ let newTask = (testo) =>{
     newDiv.appendChild(bottone)
     
     task.addEventListener('click', () => {
-        task.style.textDecoration = 'line-through'
-        task.style.color = 'red'
+        if(task.style.textDecoration === 'line-through') {
+            task.style.textDecoration = 'unset'
+            task.style.color = 'black' 
+        } else {
+            task.style.textDecoration = 'line-through'
+            task.style.color = 'red'
+        }
+       
     })
     bottone.addEventListener('click', () => {
         newDiv.remove()
