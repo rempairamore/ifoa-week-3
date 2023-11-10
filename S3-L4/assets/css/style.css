@@ -1,0 +1,34 @@
+html {
+    text-align: center;
+    background-image: url('../img/pizza.png'); 
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+#tombolone tr {
+    background-color: rgb(98, 147, 184);
+}
+
+#tombolone table {
+    padding: 10px;
+    text-align: center;
+    display: ruby;
+}
+
+#tombolone table tr td {
+    padding: 10px;
+    margin: 10px
+}
+
+#tombolone table tr {
+    margin: 150px;
+    border: 10px;
+}
+
+#pulsantiera {
+    margin: 30px;
+}
+
+#pulsantiera button {
+    padding: 10px;
+}

@@ -1,4 +1,5 @@
-let inizioTask = document.querySelector('#tasks')
+let inizioTask = document.querySelector('#tasks');
+let campoInput = document.querySelector('#inputTesto');
 
 
 //Seconda cosa fatta
@@ -26,12 +27,16 @@ let newTask = (testo) =>{
             task.style.textDecoration = 'line-through'
             task.style.color = 'red'
         }
-       
     })
     bottone.addEventListener('click', () => {
         newDiv.remove()
         hideYourTask()
     })
+    // campoInput.addEventListener('', () => {
+    //     newDiv.remove()
+    //     hideYourTask() 
+    // })
+
 }
 
 //Prima cosa fatta
