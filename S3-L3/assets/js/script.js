@@ -65,5 +65,15 @@ let hideYourTask = () => {
  
     }
 } 
-
 hideYourTask()
+
+
+//Quarta cosa fatta
+const colori = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+let primoH1 = document.querySelector('body > h1');
+let indiceColore = 0;
+
+setInterval(() => {
+    primoH1.style.color = colori[indiceColore];
+    indiceColore = (indiceColore + 1) % colori.length;
+}, 700);
