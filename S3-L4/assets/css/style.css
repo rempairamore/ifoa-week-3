@@ -1,38 +1,59 @@
 html {
     text-align: center;
-    background-image: url('../img/pizza3.png'); 
+    background-image: url('../img/naples.jpg'); 
     background-repeat: round;
     background-attachment: fixed;
     font-family: 'Montserrat';
+    display: inline-block;
+    background-color: bisque;
 }
 
 h1 {
-    color: blueviolet;
-    font-size: 3.8em;
+    color: rgb(219, 225, 17);
+    font-size: 4.2em;
+    font-weight: 900;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); 
+    background-image: url('../img/comedia.png'); 
+    background-repeat: round;
+    background-attachment: fixed;
+    background-size: 27%;
+    padding: 45px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+
+.p-modificato {
+    color: rgb(219, 225, 17);
+    font-size: 2.4em;
     font-weight: 900;
     margin: 20px;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); 
 }
 
-#tombolone tr {
+
+
+
+#tombolone tr, #schedineutente tr {
     background-color: blueviolet;
     font-size: 1.3em;
     font-weight: bold;
-    color: rgb(150, 238, 17);
+    /* color: rgb(150, 238, 17); */
+    color: rgb(255, 225, 255);
+    text-align: center;
 }
 
-#tombolone table {
+#tombolone table, #schedineutente table {
     padding: 10px;
     text-align: center;
-    display: ruby;
 }
 
-#tombolone table tr td {
+#tombolone table tr td, #schedineutente table tr td {
     padding: 10px;
     margin: 10px
 }
 
-#tombolone table tr {
+#tombolone table tr, #schedineutente table tr {
     margin: 150px;
     border: 10px;
 }
@@ -41,12 +62,50 @@ h1 {
     margin: 30px;
 }
 
+#tombolone {
+    display: inline-block;
+}
+
 #pulsantiera button {
-    padding: 10px;
+    padding: 18px;
     background-color: blueviolet;
+    border-radius: 15px;
+    font-size: 2.2em;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border: none;
+
+}
+
+#partenope img {
+    width: 35%;
+}
+
+#schedineutente h3 {
+    font-weight: 700;
+    font-size: 1.8em;
+    color: whitesmoke;
+    margin: 20px;
+}
+
+.bottone-modificato, h2 + input {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    margin: 15px;
+}
+
+
+h2 + input {
+    padding: 18px;
+    /* background-color: blueviolet; */
     border-radius: 15px;
     font-size: 1.5em;
     font-weight: 600;
-    color: rgb(150, 238, 17);
+    border: none;
+
+}
+
+.ultimocambiocolore {
+    color: rgb(219, 225, 17)!important;
 
 }
